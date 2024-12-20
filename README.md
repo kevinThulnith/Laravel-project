@@ -131,4 +131,8 @@ php artisan test
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-source and available under the [MIT license](LICENSE).
+
+---
+
+Feel free to contribute and enhance the project! For questions or suggestions, open an issue or submit a pull request.
