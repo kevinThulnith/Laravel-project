@@ -9,7 +9,7 @@
 
 # Laravel 11 Sanctum API with Breeze Frontend
 
-This repository contains a Laravel 11 application featuring a Sanctum-based API for authentication and product management, along with a Breeze-powered frontend. Below are the key features and setup instructions.
+This repository contains a Laravel 11 application featuring a Sanctum-based API for authentication and product management, along with a Breeze-powered frontend. Below are the key features and setup instructions. To do the peoject from scratch <a href="INSTALL.md"> docs</a> for more info.
 
 ## Features
 
