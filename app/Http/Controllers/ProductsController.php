@@ -101,17 +101,15 @@ class ProductsController extends Controller implements HasMiddleware
         return view('products.create');
     }
 
-    public function edit(products $product, Request $request)
+    public function edit(products $product)
     {
         Gate::authorize('modify', $product);
-        $token = $request->session()->get('auth_token');
         return view('products.edit', ['product' => $product]);
     }
 
-    public function delete(products $product, Request $request)
+    public function delete(products $product)
     {
         Gate::authorize('modify', $product);
-        $token = $request->session()->get('auth_token');
-        return view('products.delete', ['product' => $product, 'token' => $token]);
+        return view('products.delete', ['product' => $product]);
     }
 }

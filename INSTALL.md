@@ -174,3 +174,21 @@ public function up(): void
 ```bash
 php artisan migrate
 ```
+
+## Setting up API routes
+
+Edit files to create API routes
+
+1. Set-up API resource in `routes\api.php` :
+
+```bash
+use App\Http\Controllers\<Controller-class>;
+
+Route::apiResource('posts', <Controller-class>::class);
+```
+
+2. List routes on powershell :
+
+```bash
+php artisan route:list
+```

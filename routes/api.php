@@ -9,10 +9,6 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
 Route::apiResource('products', ProductsController::class);
 // auth:user routes
 Route::post('/register', [authController::class, 'register']);
