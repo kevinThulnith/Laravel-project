@@ -12,9 +12,9 @@ class products extends Model
     use HasFactory;
     protected $fillable = ["name", "price", "quantity", "description"];
 
+    // TODO: Add forieng-key relation
     public function user()
     {
-        // TODO: Add forieng-key relation
         return $this->belongsTo(User::class);
     }
 }

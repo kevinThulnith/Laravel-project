@@ -9,7 +9,9 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+// API Routes
 Route::apiResource('products', ProductsController::class);
+
 // auth:user routes
 Route::post('/register', [authController::class, 'register']);
 Route::post('/login', [authController::class, 'login']);

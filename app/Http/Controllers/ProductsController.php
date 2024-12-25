@@ -11,23 +11,19 @@ use Illuminate\Support\Facades\Auth;
 
 class ProductsController extends Controller implements HasMiddleware
 {
-
+    // !Set sanctum middle wear to controller
     public static function middleware()
     {
         return [new Middleware('auth:sanctum', except: ['index', 'show'])];
     }
 
-    /**
-     * Display a listing of the resource.
-     */
+    // TODO: Get all product
     public function index()
     {
         return products::with('user')->get();
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+    // TODO: Store new product
     public function store(Request $request)
     {
         $data = $request->validate([
@@ -40,9 +36,7 @@ class ProductsController extends Controller implements HasMiddleware
         return  $product;
     }
 
-    /**
-     * Display the specified resource.
-     */
+    // TODO: Get one product
     public function show($id)
     {
         $product = products::find($id);
@@ -51,9 +45,7 @@ class ProductsController extends Controller implements HasMiddleware
     }
 
 
-    /**
-     * Update the specified resource in storage.
-     */
+    // TODO: Update product
     public function update(Request $request, $id)
     {
         $product = products::find($id);
@@ -69,9 +61,7 @@ class ProductsController extends Controller implements HasMiddleware
         return $product;
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+    // TODO: Delete product
     public function destroy($id)
     {
         $product = products::find($id);
@@ -81,6 +71,9 @@ class ProductsController extends Controller implements HasMiddleware
         return ['message' => 'Product deleted successfully'];
     }
 
+    // front-end
+
+    // TODO: Get all product
     public function getAll(Request $request)
     {
         $products = products::with('user')->get();
@@ -88,6 +81,7 @@ class ProductsController extends Controller implements HasMiddleware
         return view('products.index', ['products' => $products, 'token' => $token]);
     }
 
+    // TODO: Get product belongs to loffed user
     public function getYour(Request $request)
     {
         $userId = Auth::id();
@@ -96,17 +90,20 @@ class ProductsController extends Controller implements HasMiddleware
         return view('products.products', ['products' => $products, 'token' => $token]);
     }
 
+    // TODO: Return product create form
     public function create(Request $request)
     {
         return view('products.create');
     }
 
+    // TODO: Return product update form
     public function edit(products $product)
     {
         Gate::authorize('modify', $product);
         return view('products.edit', ['product' => $product]);
     }
 
+    // TODO: Return product delete form
     public function delete(products $product)
     {
         Gate::authorize('modify', $product);

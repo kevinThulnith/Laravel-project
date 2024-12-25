@@ -110,7 +110,7 @@ Configure `.env` file with email and App password with gmail.
 
 ## Setting up API
 
-1. Install nececessary packages :
+Install nececessary packages :
 
 ```bash
 php artisan install:api
@@ -191,4 +191,16 @@ Route::apiResource('posts', <Controller-class>::class);
 
 ```bash
 php artisan route:list
+```
+
+3. Select data :
+
+Set controller function to get _SELECT \* FROM_ `<table-name>` in laravel
+
+```bash
+public function index()
+{
+    $products = product::all();
+    return $products
+}
 ```
