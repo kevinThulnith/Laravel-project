@@ -204,3 +204,27 @@ public function index()
     return $products
 }
 ```
+
+4. Set sanctum authentication to controller :
+
+-   Import this first
+
+```bash
+use Illuminate\Routing\Controllers\HasMiddleware;
+use Illuminate\Routing\Controllers\Middleware;
+```
+
+-   change controller first line
+
+```bash
+class <Controller-class> extends Controller implements HasMiddleware
+```
+
+-   Set middlewear with exeptions(functions)
+
+```bash
+public static function middleware()
+{
+    return [new Middleware('auth:sanctum', except: ['exeption1', 'exeption2'])];
+}
+```
