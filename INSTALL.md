@@ -4,7 +4,7 @@
 
 ## Setting up the project.
 
-All commands executed on project directory command prompt | powerShell. Install Composer <a href="https://getcomposer.org/download/"> Link </a> .
+All commands executed on project directory windows cmd | powerShell | <a href="https://git-scm.com/downloads">gitbash</a>. Install Composer <a href="https://getcomposer.org/download/"> Link </a> .
 
 1. Creating an Application :
 

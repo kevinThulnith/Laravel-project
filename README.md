@@ -7,20 +7,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# Laravel 11 Sanctum API with Breeze Frontend
+# Laravel 11 Project with Sanctum (API) and Breeze (Frontend)
 
-This repository contains a Laravel 11 application featuring a Sanctum-based API for authentication and product management, along with a Breeze-powered frontend. Below are the key features and setup instructions. To do the peoject from scratch <a href="INSTALL.md"> docs</a> for more info.
+This repository contains a Laravel 11 application featuring a Sanctum-based API for authentication and product management, along with a Breeze-powered frontend (Tailwind Css styling). Below are the key features and setup instructions. To do the peoject from scratch <a href="INSTALL.md"> docs</a> for more info.
 
-## Features
+## 🚀 Features
 
-### Authentication
+### 🏷️ Authentication
 
 -   **Login**
 -   **Logout**
 -   **Email Verification**
 -   Built-in API authentication using Sanctum (requires API tokens for accessing and manipulating product data).
 
-### Product Management
+### 🏷️ Product Management
 
 -   **Add Product**
 -   **Delete Product**
@@ -28,11 +28,11 @@ This repository contains a Laravel 11 application featuring a Sanctum-based API 
 -   **View Product**
 -   Only the users who created a product can manipulate its data.
 
-### Frontend
+### 🏷️ Frontend
 
--   Built using [Laravel Breeze](https://laravel.com/docs/11.x/starter-kits#breeze) for a simple and elegant user interface.
+-   Built using [Laravel Breeze](https://laravel.com/docs/11.x/starter-kits#breeze) for a simple and elegant user interface. Fully responsive across multiple devices.
 
-## Prerequisites
+## 🛠️ Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
 
@@ -41,7 +41,7 @@ Before you begin, ensure you have the following installed on your system:
 -   Node.js and npm
 -   MySQL or any other supported database | SQLite
 
-## Installation
+## ⚙️ Installation
 
 1. Clone the repository:
 
@@ -116,7 +116,7 @@ Before you begin, ensure you have the following installed on your system:
 
 ## Frontend
 
-The frontend is built using Laravel Breeze, providing:
+The frontend is built using Laravel Breeze and Tailwind styling, providing:
 
 -   Authentication pages (login, registration, password reset, email verification).
 -   Basic product management UI integrated with the backend API.
