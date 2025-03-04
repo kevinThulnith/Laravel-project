@@ -9,18 +9,20 @@
 
 # Laravel 11 Project with Sanctum (API) and Breeze (Frontend)
 
-This repository contains a Laravel 11 application featuring a Sanctum-based API for authentication and product management, along with a Breeze-powered frontend (Tailwind Css styling). Below are the key features and setup instructions. To do the peoject from scratch <a href="INSTALL.md"> docs</a> for more info.
+This repository contains a **Laravel 11** application featuring a **Sanctum-based API** for authentication and product management, along with a **Breeze-powered frontend** (styled with Tailwind CSS). Below are the key features, setup instructions, and usage details.
 
-## 🚀 Features
+For a step-by-step guide to building this project from scratch, refer to the <a href="INSTALL.md">INSTALL.md</a> documentation.
 
-### 🏷️ Authentication
+## 🚀 Key Features
+
+### 🔐 Authentication
 
 -   **Login**
 -   **Logout**
 -   **Email Verification**
--   Built-in API authentication using Sanctum (requires API tokens for accessing and manipulating product data).
+-   Built-in API authentication using **Sanctum** (requires API tokens for accessing and manipulating product data).
 
-### 🏷️ Product Management
+### 📦 Product Management
 
 -   **Add Product**
 -   **Delete Product**
@@ -28,18 +30,20 @@ This repository contains a Laravel 11 application featuring a Sanctum-based API 
 -   **View Product**
 -   Only the users who created a product can manipulate its data.
 
-### 🏷️ Frontend
+### 🎨 Frontend
 
--   Built using [Laravel Breeze](https://laravel.com/docs/11.x/starter-kits#breeze) for a simple and elegant user interface. Fully responsive across multiple devices.
+-   Built using [Laravel Breeze](https://laravel.com/docs/11.x/starter-kits#breeze) for a simple and elegant user interface.
+
+-   Fully responsive across multiple devices.
 
 ## 🛠️ Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
 
--   PHP >= 8.2
--   Composer
--   Node.js and npm
--   MySQL or any other supported database | SQLite
+-   **PHP >= 8.2**
+-   **Composer**
+-   **Node.js** and **npm**
+-   **MySQL** or any other supported database | **SQLite**
 
 ## ⚙️ Installation
 
@@ -94,34 +98,34 @@ Before you begin, ensure you have the following installed on your system:
     ```
     The application will be available at `http://localhost:8000`.
 
-## API Endpoints
+## 🌐 API Endpoints
 
-### Authentication
+### 🔐 Authentication
 
 -   **Login:** `POST /api/login`
 -   **Logout:** `POST /api/logout`
 -   **Email Verification:** `POST /api/email/verify`
 
-### Product Management
+### 📦 Product Management
 
 -   **Add Product:** `POST /api/products`
 -   **Delete Product:** `DELETE /api/products/{id}`
 -   **Edit Product:** `PUT /api/products/{id}`
 -   **View Products:** `GET /api/products`
 
-### Notes:
+### 📝 Notes:
 
 -   All product manipulation endpoints require an API token.
 -   Only the user who created a product can edit or delete it.
 
-## Frontend
+## 🎨 Frontend
 
 The frontend is built using Laravel Breeze and Tailwind styling, providing:
 
 -   Authentication pages (login, registration, password reset, email verification).
 -   Basic product management UI integrated with the backend API.
 
-## Testing
+## 🧪 Testing
 
 Run the test suite to ensure everything is working as expected:
 
@@ -129,7 +133,7 @@ Run the test suite to ensure everything is working as expected:
 php artisan test
 ```
 
-## License
+## 📜 License
 
 This project is open-source and available under the [MIT license](LICENSE).
 
